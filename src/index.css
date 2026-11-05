@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 :root {
   --text: #6b6375;
   --text-h: #08060d;
@@ -109,3 +110,7 @@ code {
   padding: 4px 8px;
   background: var(--code-bg);
 }
+=======
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
+:root{font-family:'DM Sans',sans-serif;color:#f4f1eb;background:#101211;font-synthesis:none;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;font-weight:400}*{box-sizing:border-box}body{margin:0;min-width:320px}button,input,select{font:inherit}a{color:inherit;text-decoration:none}button{cursor:pointer}::selection{background:#c7f36b;color:#141710}
+>>>>>>> 501ecf7d42a68514cf0a65e89d3f5da78d2781a9

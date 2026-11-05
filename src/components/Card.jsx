@@ -1,0 +1,2 @@
+import { Link } from 'react-router-dom';
+export default function Card({item}){return <article className="product-card"><Link to={`/items/${item.id}`} className="product-image"><img src={item.image} alt={item.title}/></Link><div className="product-body"><small>{item.category}</small><h3>{item.title}</h3><div className="card-bottom"><strong>${item.price?.toFixed(2)}</strong><Link to={`/items/${item.id}`}>View details →</Link></div><span className="rating">★ {item.rating?.rate ?? '—'} · {item.rating?.count ?? 0} reviews</span></div></article>}

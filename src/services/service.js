@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const API = 'https://dummyjson.com';
 
 async function request(url, signal) {
@@ -39,4 +40,17 @@ export async function getCategories(signal) {
 export async function getAllProducts(signal) {
   const data = await request(`${API}/products?limit=0`, signal);
   return data.products || [];
+=======
+const API = 'https://fakestoreapi.com';
+export async function getProducts({ signal } = {}) {
+  const response = await fetch(`${API}/products`, { signal });
+  if (!response.ok) throw new Error('Could not load products. Please try again.');
+  return response.json();
+}
+export async function getProduct(id, { signal } = {}) {
+  const response = await fetch(`${API}/products/${id}`, { signal });
+  if (response.status === 404) return null;
+  if (!response.ok) throw new Error('Could not load this product.');
+  return response.json();
+>>>>>>> 501ecf7d42a68514cf0a65e89d3f5da78d2781a9
 }
