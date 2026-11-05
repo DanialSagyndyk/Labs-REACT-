@@ -1,4 +1,13 @@
 {
+<<<<<<< HEAD
+  "name": "questhub-routing-homework",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {"dev":"vite", "build":"vite build", "preview":"vite preview", "lint":"oxlint"},
+  "dependencies": {"react":"^19.2.0", "react-dom":"^19.2.0", "react-router-dom":"^7.9.0"},
+  "devDependencies": {"@vitejs/plugin-react":"^6.0.0", "vite":"^8.0.0", "oxlint":"^1.0.0"}
+=======
   "name": "task-3",
   "private": true,
   "version": "0.0.0",
@@ -24,4 +33,5 @@
     "oxlint": "^1.81.0",
     "vite": "^8.3.0"
   }
+>>>>>>> 501ecf7d42a68514cf0a65e89d3f5da78d2781a9
 }
